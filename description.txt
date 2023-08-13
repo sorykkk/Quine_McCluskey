@@ -1,0 +1,18 @@
+Se opereaza:
+1. In fisierul <input.txt> se introduce dupa cum urmeaza:
+ i)  primele 2 cifre B, N (B - numarul de biti(variabile), N - numarul de mintermi UNICI, impreuna cu don't care-uri)
+ ii) urmatoarele linii urmeaza acei N mintermi (se introduce efectiv numarul)
+ iii)daca sunt don't care-uri se pun cu semnul minus ("-"), daca nu sunt prezente, pur simplu nu se pun
+
+Se compileaza in 2 moduri (in dependenta de scop):
+1. Fara optiunea de debugging
+	gcc -Wall main.c qm.c -o p (compilare)
+	./p			   (rularea programei in consola)
+2. Cu optiunea de debugging 
+	gcc -Wall -DDEBUG main.c qm.c -o p (compilare)
+	./p				   (rularea programei in consola)
+
+
+PS. 1. Daca formula nu iese atunci este posibil ca minimizarea sa aiba mai multe formule echivalente
+    2. Daca da eroare in timpul executiei (Segmentation fault) rog sa verificati datele de input din fisier
+
